@@ -1,0 +1,91 @@
+:root {
+  --srcery-palette-black: #121110;
+  --srcery-palette-red: #EF2F27;
+  --srcery-palette-green: #519F50;
+  --srcery-palette-yellow: #FBB829;
+  --srcery-palette-blue: #2C78BF;
+  --srcery-palette-magenta: #E02C6D;
+  --srcery-palette-cyan: #0AAEB3;
+  --srcery-palette-white: #C5B088;
+  --srcery-palette-bright-black: #917E6B;
+  --srcery-palette-bright-red: #F75341;
+  --srcery-palette-bright-green: #98BC37;
+  --srcery-palette-bright-yellow: #FED06E;
+  --srcery-palette-bright-blue: #68A8E4;
+  --srcery-palette-bright-magenta: #FF5C8F;
+  --srcery-palette-bright-cyan: #2BE4D0;
+  --srcery-palette-bright-white: #FCE8C3;
+  --srcery-palette-dark-green: #294229;
+  --srcery-palette-dark-red: #4F2321;
+  --srcery-palette-dark-blue: #1E5181;
+  --srcery-palette-dim-green: #2E5C2E;
+  --srcery-palette-orange: #FF5F00;
+  --srcery-palette-bright-orange: #FF8700;
+  --srcery-palette-teal: #008080;
+  --srcery-palette-gray1: #1C1B19;
+  --srcery-palette-gray2: #262522;
+  --srcery-palette-gray3: #312F2C;
+  --srcery-palette-gray4: #3B3935;
+  --srcery-palette-gray5: #45433E;
+  --srcery-palette-gray6: #504D47;
+  --srcery-palette-hard-black: #0E0D0C;
+}
+
+* {
+  background-color: var(--srcery-palette-black);
+  color: var(--srcery-palette-bright-white);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+h1, p {
+  display: block;
+}
+
+p {
+  font-size: 1em;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.initial {
+  h1 {
+    font-size: 5em;
+    text-decoration: underline var(--srcery-palette-bright-blue);
+  }
+}
+
+.gallery {
+  h1 {
+    font-size: 4em;
+    text-decoration: underline var(--srcery-palette-teal);
+  }
+}
+
+.bandform {
+  h1 {
+    font-size: 4em;
+    text-decoration: underline var(--srcery-palette-orange);
+  }
+}
+
+
+.crisislab {
+  h1 {
+    font-size: 4em;
+    text-decoration: underline var(--srcery-palette-blue);
+  }
+}
