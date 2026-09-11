@@ -39,6 +39,7 @@
 html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 h1, p {
@@ -47,6 +48,19 @@ h1, p {
 
 p {
   font-size: 1em;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.center{
+    margin: 1rem auto ;
+    padding: 1rem 1rem;
+    max-width: 80rem;
+
 }
 
 .section {
@@ -61,6 +75,24 @@ p {
 
 }
 
+.text-block{
+    /*display: inline-block;*/
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+
+.split-div{
+    display: flex;
+    flex: row;
+    gap: 2rem;
+}
+
+.split > div {
+    flex: 1;
+}
+
 .initial {
   h1 {
     font-size: 5em;
@@ -73,6 +105,8 @@ p {
     font-size: 4em;
     text-decoration: underline var(--srcery-palette-teal);
   }
+
+  justify-content: left;
 }
 
 .bandform {
