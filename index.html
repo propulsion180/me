@@ -9,42 +9,95 @@
             <div class="section initial">
                 <h1>Migada Perera</h1>
 
-                <p>A Graduate Software Engineer based in Wellington NZ</p>
-
-                <div class="split-div">
-                    <div>
-                        <h3>I have experience in:</h3>
-                        <ul>
-                            <li>Full Stack Web Development</li>
-                            <li>Embedded Development</li>
-                            <li>Application Development</li>
-                            <li>Linux Server Administration</li>
-                        </ul>
+                <blockquote>
+                    A <em>Graduate Software Engineer</em> based in Wellington NZ
+                </blockquote>
+                <div class="v-split-div">
+                    <div class="h-split-div">
+                        <div>
+                            <h3>I have experience in:</h3>
+                            <ul>
+                                <li>Full Stack Web Development</li>
+                                <li>Embedded Development</li>
+                                <li>Application Development</li>
+                                <li>Linux Server Administration</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Outside of Engineering I like:</h3>
+                            <ul>
+                                <li><a href="#gallery">Photography</a></li>
+                                <li><a href="#bandform">Drumming</a></li>
+                                <li>Baking</li>
+                                <li>Cars</li>
+                            </ul>
+                        </div>
                     </div>
                     <div>
-                        <h3>Outside of Engineering I like:</h3>
+                        <h3>I am currently:</h3>
                         <ul>
-                            <li><a href="#gallery">Photography</a></li>
-                            <li><a href="#bandform">Drumming</a></li>
-                            <li>Baking</li>
-                            <li>Cars</li>
+                            <li>Looking for a full-time Junior Role</li>
+                            <li>
+                                Working part-time at CRISiSLab as a Research
+                                Assistant
+                            </li>
+                            <li>
+                                Developing a delivery docket data extraction
+                                pipeline for Setpoint Solutions
+                            </li>
                         </ul>
                     </div>
                 </div>
+                <p class="centerp">
+                    You can contact me via <a href="mailto:wmmperera@tuta.io">Mail</a>, <a href="tel:+642108613879">Phone</a>, or <a href="https://www.linkedin.com/in/migadaperera
+
+">LinkedIn</a>
+                    <br/>
+                    And see my work on <a href="https://www.github.com/propulsion180">GitHub</a>
+                </p>
                 <p>Scroll down for more...</p>
             </div>
             <div class="section gallery" id="gallery">
                 <a href="https://gallery.wmmp.xyz">
-                    <h1>My Image Gallery</h1>
+                    <h1>Image Gallery</h1>
                 </a>
 
+                <p>A simple website to exhibit the photos I take</p>
                 <div class="text-block">
-                    <p>A simple website to exhibit the photos I take</p>
                     <p>
                         There have been 3 major phases the website has been
                         through.
                     </p>
-                    <p>Phase one.</p>
+                    <br />
+                    <p>Phase one</p>
+                    <p>
+                        The initial implementation of it consisted of a
+                        <strong>Golang</strong> backend with a HTMX frontend.
+                        This was my first attempt at creating a webapp so it was
+                        extremely difficult to fix and update
+                    </p>
+                    <br />
+                    <p>Phase two</p>
+                    <p>
+                        Had recently learned React for the CRISiSLab Meshtastic
+                        network monitoring and management system. The
+                        combination of weird page history caused by my use of
+                        htmx and my spaghetti backend code's maintainability I
+                        decided to refactor my backend code and create a React
+                        frontend for the website. This was satisfactory until I
+                        started film photography and realized my website could
+                        only store data useful for digital photography. This
+                        would require alot of work to update the code that
+                        handled data storage. I had been tinkering with
+                        SpringBoot and found JPA to be very easy. So I migrated
+                        my backend to SpringBoot.
+                    </p>
+                    <br />
+                    <p>Phase three (current state)</p>
+                    <p>
+                        The backend is currently now in SpringBoot. Additionally
+                        users do not need a login to view images.
+                    </p>
                 </div>
             </div>
             <div class="section bandform" id="bandform">
@@ -55,8 +108,7 @@
             <div class="section crisislab">
                 <a href="https://monitor.wmmp.xyz">
                     <h1>
-                        CRISiSLab's Meshtastic network monitoring and management
-                        system
+                        CRISiSLab's Meshtastic monitoring and management system
                     </h1>
                 </a>
             </div>
